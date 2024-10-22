@@ -1,0 +1,6 @@
+Invoking command in '/home/ubuntu/test/ros2-tutorials/build/learning_tf2_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/test/ros2-tutorials/src/learning_tf2_cpp -DCMAKE_INSTALL_PREFIX=/home/ubuntu/test/ros2-tutorials/install/learning_tf2_cpp
+Invoked command in '/home/ubuntu/test/ros2-tutorials/build/learning_tf2_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/test/ros2-tutorials/src/learning_tf2_cpp -DCMAKE_INSTALL_PREFIX=/home/ubuntu/test/ros2-tutorials/install/learning_tf2_cpp
+Invoking command in '/home/ubuntu/test/ros2-tutorials/build/learning_tf2_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/test/ros2-tutorials/build/learning_tf2_cpp -- -j8 -l8
+Invoked command in '/home/ubuntu/test/ros2-tutorials/build/learning_tf2_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/test/ros2-tutorials/build/learning_tf2_cpp -- -j8 -l8
+Invoking command in '/home/ubuntu/test/ros2-tutorials/build/learning_tf2_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/test/ros2-tutorials/build/learning_tf2_cpp
+Invoked command in '/home/ubuntu/test/ros2-tutorials/build/learning_tf2_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/test/ros2-tutorials/build/learning_tf2_cpp

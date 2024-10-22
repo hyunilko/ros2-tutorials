@@ -1,16 +1,16 @@
-// Copyright 2021 Open Source Robotics Foundation, Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+  // Copyright 2021 Open Source Robotics Foundation, Inc.
+  //
+  // Licensed under the Apache License, Version 2.0 (the "License");
+  // you may not use this file except in compliance with the License.
+  // You may obtain a copy of the License at
+  //
+  //     http://www.apache.org/licenses/LICENSE-2.0
+  //
+  // Unless required by applicable law or agreed to in writing, software
+  // distributed under the License is distributed on an "AS IS" BASIS,
+  // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  // See the License for the specific language governing permissions and
+  // limitations under the License.
 
 #include <chrono>
 #include <functional>
@@ -71,18 +71,11 @@ private:
         // Look up for the transformation between target_frame and turtle2 frames
         // and send velocity commands for turtle2 to reach target_frame
         try {
-            // t = tf_buffer_->lookupTransform(
-            //   toFrameRel, fromFrameRel,
-            //   tf2::TimePointZero);
-            rclcpp::Time now  = this->get_clock()->now();
-            rclcpp::Time when = now - rclcpp::Duration(5, 0);
             t = tf_buffer_->lookupTransform(
                 toFrameRel,
-                now,
                 fromFrameRel,
-                when,
-                "world",
-                50ms);
+                this->now(),
+                rclcpp::Duration::from_seconds(0.05));
         } catch (const tf2::TransformException & ex) {
           RCLCPP_INFO(
             this->get_logger(), "Could not transform %s to %s: %s",

@@ -38,10 +38,10 @@ def generate_launch_description():
 
     declared_arguments = [
         DeclareLaunchArgument("use_rviz", default_value='true'),
-        DeclareLaunchArgument("rviz_config", default_value=os.path.join(package_path, "rviz", "unified_radars.rviz")),
+        DeclareLaunchArgument("rviz_config", default_value=os.path.join(package_path, "rviz", "multi_radars_each_pub.rviz")),
         # DeclareLaunchArgument("rviz_config", default_value=os.path.join(package_path, "rviz", "radar_lidar.rviz")),
         DeclareLaunchArgument("publish_tf", default_value='true'),
-        DeclareLaunchArgument("urdf_model", default_value=os.path.join(package_path, "urdf", "unified_radars.urdf")),
+        DeclareLaunchArgument("urdf_model", default_value=os.path.join(package_path, "urdf", "multi_radars_each_pub.urdf")),
         # DeclareLaunchArgument("urdf_model", default_value=os.path.join(package_path, "urdf", "radar_lidar.urdf")),
     ]
 

@@ -8,7 +8,7 @@
 <joint name="base_roof_lidar" type="fixed">
     <parent link="base_link"/>
     <child link="hesai_lidar"/>
-    <origin xyz="0.716 -0.189 0" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
 </joint>
 
 <link name="hesai_lidar">

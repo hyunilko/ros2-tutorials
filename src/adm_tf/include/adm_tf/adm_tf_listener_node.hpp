@@ -1,5 +1,5 @@
-#ifndef __SIMPLE_TF_LISTENER_NODE_HPP__
-#define __SIMPLE_TF_LISTENER_NODE_HPP__
+#ifndef __ADM_TF_LISTENER_NODE_HPP__
+#define __ADM_TF_LISTENER_NODE_HPP__
 
 #include "rclcpp/rclcpp.hpp"
 #include "tf2_ros/transform_listener.h"
@@ -22,4 +22,4 @@ private:
     void TransformToRPY(geometry_msgs::msg::TransformStamped transform);
 };
 
-#endif // __SIMPLE_TF_LISTENER_NODE_HPP__
+#endif // __ADM_TF_LISTENER_NODE_HPP__
